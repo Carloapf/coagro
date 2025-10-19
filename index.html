@@ -3,27 +3,74 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Coagro</title>
+  <title>Coagro - En Mantenimiento</title>
   <style>
+    /* Reset simple */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
     body {
-      background-color: #f7f8fa;
-      font-family: Arial, sans-serif;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      background: linear-gradient(135deg, #6dd5fa, #ffffff);
+      font-family: 'Arial', sans-serif;
+      color: #2c3e50;
       text-align: center;
-      padding-top: 15%;
-      color: #333;
+      padding: 20px;
     }
+
     h1 {
       font-size: 3em;
-      color: #2c3e50;
+      margin-bottom: 0.5em;
+      animation: pulse 2s infinite;
     }
+
     p {
       font-size: 1.2em;
       color: #555;
+      margin-bottom: 1em;
     }
+
+    .notice {
+      background-color: #ffebc6;
+      color: #a65c00;
+      padding: 15px 25px;
+      border-radius: 10px;
+      font-weight: bold;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+      100% { transform: scale(1); }
+    }
+
+    /* Opcional: link para volver */
+    a {
+      display: inline-block;
+      margin-top: 20px;
+      color: #fff;
+      background-color: #2c3e50;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: background-color 0.3s;
+    }
+    a:hover {
+      background-color: #1a2733;
+    }
+
   </style>
 </head>
 <body>
-  <h1>🚧 En mantenimiento</h1>
-  <p>Estamos trabajando para mejorar tu experiencia.<br>Vuelve pronto.</p>
+  <h1>🚧 En Mantenimiento</h1>
+  <p>La página de la empresa <strong>Coagro</strong> está temporalmente deshabilitada por mantenimiento.</p>
+  <div class="notice">
+    Estamos trabajando para mejorar tu experiencia. ¡Vuelve pronto!
+  </div>
+  <a href="https://www.coagro.com" target="_blank">Ir al sitio principal (si disponible)</a>
 </body>
 </html>
