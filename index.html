@@ -1,17 +1,12 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Coagro - En Mantenimiento</title>
   <style>
     /* Reset simple */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
 
     body {
       height: 100vh;
@@ -44,50 +39,61 @@
       padding: 15px 25px;
       border-radius: 10px;
       font-weight: bold;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      margin-bottom: 20px;
     }
 
     @keyframes pulse {
-      0% {
-        transform: scale(1);
-      }
-
-      50% {
-        transform: scale(1.05);
-      }
-
-      100% {
-        transform: scale(1);
-      }
+      0% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+      100% { transform: scale(1); }
     }
 
-    /* Opcional: link para volver */
-    a {
+    /* Botones de contacto */
+    .contact-btn {
       display: inline-block;
-      margin-top: 20px;
-      color: #fff;
-      background-color: #2c3e50;
-      padding: 10px 20px;
-      border-radius: 5px;
+      margin: 10px;
+      padding: 12px 25px;
+      border-radius: 8px;
+      font-weight: bold;
       text-decoration: none;
+      color: #fff;
       transition: background-color 0.3s;
     }
 
-    a:hover {
-      background-color: #1a2733;
+    .whatsapp-btn {
+      background-color: #25D366;
     }
+    .whatsapp-btn:hover {
+      background-color: #1ebe5d;
+    }
+
+    .email-btn {
+      background-color: #0072c6;
+    }
+    .email-btn:hover {
+      background-color: #005a9e;
+    }
+
   </style>
 </head>
-
 <body>
   <h1>🚧 Sitio en Mantenimiento</h1>
-  <p>La página de la empresa <strong>Coagro</strong> está temporalmente fuera de servicio mientras realizamos mejoras
-    importantes para brindarte una mejor experiencia.</p>
+  <p>La página de la empresa <strong>Coagro</strong> está temporalmente fuera de servicio mientras realizamos mejoras importantes para brindarte una mejor experiencia.</p>
+  
   <div class="notice">
     Estamos trabajando activamente para que todo vuelva a la normalidad lo antes posible.<br>
     Gracias por tu paciencia y comprensión.
   </div>
-  <a href="https://www.coagro.com" target="_blank">Visita nuestro sitio principal</a>
-</body>
 
+  <!-- Botón de WhatsApp -->
+  <a href="https://wa.me/5215512345678" target="_blank" class="contact-btn whatsapp-btn">
+    📲 Contactanos por WhatsApp
+  </a>
+
+  <!-- Botón de correo -->
+  <a href="mailto:coagro2k13@hotmail.com" class="contact-btn email-btn">
+    ✉️ Envíanos un correo
+  </a>
+</body>
 </html>
